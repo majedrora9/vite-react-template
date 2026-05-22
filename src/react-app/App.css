@@ -1,45 +1,37 @@
-#root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.logo.cloudflare:hover {
-	filter: drop-shadow(0 0 2em #f6821faa);
+body {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background: linear-gradient(135deg, #0a3d2d, #06281d);
+  color: #f5deb3;
 }
 
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+.app {
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
 }
 
-.card {
-	padding: 2em;
+.content {
+  max-width: 800px;
 }
 
-.read-the-docs {
-	color: #888;
+.content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.4;
+  font-weight: 700;
 }
